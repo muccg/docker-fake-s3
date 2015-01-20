@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -yqq \
 RUN gem install fakes3 -v 0.1.6.1
 
 # run fake-s3
-RUN mkdir -p /data
+RUN mkdir -p /data/fakes3
 
 EXPOSE 4569
 
