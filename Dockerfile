@@ -29,4 +29,5 @@ RUN mkdir -p /data/fakes3
 EXPOSE 4569
 
 ENTRYPOINT ["/usr/local/bin/fakes3"]
-CMD ["-r",  "/data", "-p",  "4569", "-h", "0.0.0.0"]
+# CMD ["-r",  "/data", "-p",  "4569", "-h", "0.0.0.0"]
+CMD ["-r",  "/data", "-p",  "4569"]
