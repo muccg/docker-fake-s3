@@ -1,0 +1,5 @@
+version: '2'
+services:
+
+  fakes3:
+    image: muccg/fakes3:latest
