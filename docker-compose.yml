@@ -2,4 +2,4 @@ version: '2'
 services:
 
   fakes3:
-    image: muccg/fakes3:latest
+    image: muccg/fake-s3:latest

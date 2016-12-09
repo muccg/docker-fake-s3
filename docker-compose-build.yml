@@ -6,17 +6,17 @@ services:
       context: ./
       args:
         ARG_FAKES3_VERSION: ${DOCKER_FAKES3_VERSION}
-    image: muccg/fakes3:${GIT_BRANCH}
+    image: muccg/fake-s3:${GIT_BRANCH}
 
   prod:
     build:
       context: ./
       args:
         ARG_FAKES3_VERSION: ${DOCKER_FAKES3_VERSION}
-    image: muccg/fakes3:${DOCKER_FAKES3_VERSION}
+    image: muccg/fake-s3:${DOCKER_FAKES3_VERSION}
 
   latest:
     extends:
       file: docker-compose-build.yml
       service: prod
-    image: muccg/fakes3:latest
+    image: muccg/fake-s3:latest
